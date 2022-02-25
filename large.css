@@ -1,0 +1,367 @@
+/*
+   Style css pour les tablettes et écrans de taille moyenne
+ */
+@media only screen and (min-device-width: 1024px) {
+
+    .ibooki__title {
+        font-size: 14px;
+        font-family: Raleway;
+        color: black;
+    }
+
+    nav a {
+        color: inherit;
+        text-decoration: none;
+        padding: 32px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-wrap: wrap;
+    }
+
+    nav a:hover {
+        border-top: 2px solid #0065FC;
+        margin: -7px;
+        padding: 0px 32px;
+    }
+
+    #logo {
+
+        max-width: 90px;
+        max-height: 100px;
+        padding: 0px 32px 0px;
+        margin-right: -7px;
+    }
+
+    nav img {
+        /*object-position: ;*/
+        max-width: 90px;
+        max-height: 100px;
+    }
+
+    .sinscrire {
+        color: #0065FC;
+        font-weight: bold;
+        display: none;
+
+    }
+
+    .sinscrire a:hover {
+        border-top: 3px solid #0065FC;
+    }
+
+    .titre_principal {
+        font-size: 11px;
+        font-family: Raleway;
+        color: black;
+    }
+
+    .intro {
+        font-size: 12px;
+        color: gray;
+        font-family: Raleway;
+    }
+
+    .body {
+        margin-right: 9px;
+    }
+
+    /*HEADER2 */
+
+    .Header2 {
+        padding: 0px 13px;
+        margin-bottom: 10px;
+    }
+
+    .titre_principal {
+        font-size: 10px;
+        font-family: Raleway;
+        color: black;
+    }
+
+    .intro {
+        font-size: 12px;
+        color: gray;
+        font-family: Raleway;
+    }
+
+    /*SEARCH FORM*/
+
+    .search_form {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        margin-top: 10px;
+        margin: 0px;
+    }
+
+    .search_form * {
+        padding: 9px 10px;
+        font-size: 9px;
+        padding-right: -4px;
+    }
+
+    .search_form i {
+        padding: 7px 10px;
+        background-color: #f2f2f2;
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .search_form input {
+        flex-basis: 100px;
+        border: 1px solid #f2f2f2;
+        padding: 7px 10px;
+    }
+
+    .search_form input::placeholder {
+        font-size: 11px;
+        font-weight: bold;
+        padding: 9px 10px;
+        color: black;
+
+    }
+
+    .search_form button {
+        background-color: #0065FC;
+        color: white;
+        font-size: 9px;
+        font-weight: bold;
+        border-radius: 0px 8px 9px 0px;
+        padding: 7px 9px;
+    }
+
+    /*FILTERS */
+
+    .Filtre_listes {
+        display: flex;
+        align-items: center;
+        gap: 25px 19px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+
+    }
+
+    .Filtre .fas {
+        color: #0065FC;
+        background-color: #DEEBFF;
+        padding: 8px;
+        border-radius: 15px;
+        margin: -1px;
+    }
+
+    .filtre {
+        border: 2px solid lightgray;
+        border-radius: 80px;
+    }
+
+    .Filtre span {
+        font-weight: bold;
+        padding: 32px;
+    }
+
+    /*RESULTATS MESSAGE */
+
+    .info_message {
+        color: grey;
+        margin-top: 16px;
+    }
+
+    .fas.fa-info-circle {
+        color: #0065FC;
+
+    }
+
+    .info_message.fas.fa-info-circle {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* Les hébergements à Marseille */
+
+    #Hebergements {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 15px;
+        max-width: 1300px;
+        gap: 10px;
+
+    }
+
+    #ibooki__hebergements {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+        padding: 16px 30px 16px 30px;
+        border-radius: 20px;
+        max-width: 805px;
+        background-color: #f2f2f2;
+    }
+
+    .Hebergements .Noms_hebergements {
+        flex-basis: 11px;
+    }
+
+    .plus a {
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    @media (max-width: 800px) {
+        .Hebergements {
+            flex-direction: column;
+        }
+
+        .populaires {
+            order: -1;
+        }
+
+    }
+
+    .Noms_hebergements {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .ibooki__hebergement-populaires {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid red;
+        padding: 18px 36px 18px 36px;
+        border-radius: 20px;
+        max-width: 700px;
+        background-color: #f2f2f2;
+    }
+
+    .ibooki__container_herbergements {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-bottom: 60px;
+        margin-top: 0px;
+    }
+
+    .ibooki__container_herbergements_populaires {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-bottom: 60px;
+        margin-top: 0px;
+    }
+
+    .ibooki__card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 0 15px black;
+        max-width: 236px;
+        border: 4px solid white;
+        margin-bottom: 28px;
+        padding: 8px;
+
+    }
+
+    .ibooki__card img {
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        height: 116px;
+        width: 236px;
+    }
+
+    .ibooki__card p,
+    .ibooki__card h3 {
+        margin: 5px;
+    }
+
+    .blue {
+        color: #0065FC;
+    }
+
+    .grey {
+        color: grey;
+    }
+
+    /*Les populaires*/
+
+    .Hebergements .Hebergement_Populaires {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        margin-bottom: 30px;
+    }
+
+    #Populaires {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid red;
+        padding: 18px 36px 18px 36px;
+        border-radius: 20px;
+        max-width: 700px;
+        background-color: #f2f2f2;
+
+    }
+
+    #Populaires .photo_card_herbergements {
+        height: 157px;
+        width: 138px;
+        border: 3px solid green;
+        padding-top: 2px;
+        border-radius: 20px 0px 0px 20px;
+        object-fit: cover;
+    }
+
+    .box_card_populaires {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        border: 3px solid blue;
+        max-height: 170px;
+        max-width: 405px;
+        border-radius: 20px;
+        margin: 2px;
+        margin-right: 2px;
+        padding-left: 4px;
+        background-color: white;
+        padding: 2px;
+        box-shadow: 0px 0px 15px black;
+        margin: 20px;
+    }
+
+    .ibooki__title-hebergement-populaire {
+        align-items: center;
+    }
+
+    .ibooki__tarifs-populaires {
+        text-align: left;
+    }
+
+    .etoiles .box_card_populaires {
+        margin-top: -90px;
+        margin-left: -250px;
+        padding: 1px;
+        left: auto;
+    }
+
+    .fas.fa-chart-line {
+        text-align: right;
+
+    }
+
+    /*Activités à Marseille*/
+
+}
